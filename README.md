@@ -1,5 +1,3 @@
-== README
-
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/rskvirskiy/rails_screenshots/tree/master)
 
 This README would normally document whatever steps are necessary to get the
