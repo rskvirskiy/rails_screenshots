@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'carrierwave'
 gem 'imgkit'
+gem 'sidekiq'
 
 group :doc do
   gem 'sdoc', require: false

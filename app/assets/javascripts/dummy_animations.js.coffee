@@ -18,4 +18,5 @@ updateClock = ->
   document.getElementById("clock").firstChild.nodeValue = currentTimeString
 
 $ ->
-  setInterval updateClock, 1000
+  if $('#clock').length > 0
+    setInterval(updateClock, 1000)

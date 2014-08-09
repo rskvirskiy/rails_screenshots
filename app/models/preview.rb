@@ -5,11 +5,13 @@ class Preview < ActiveRecord::Base
 
   def take_snapshot_imgkit(url)
     file = Tempfile.new(["template_#{self.id.to_s}", 'png'], 'tmp', encoding: 'ascii-8bit')
+    png = IMGKit.new(url, javascript_delay: 1000).to_png
 
-    file.write(IMGKit.new(url, javascript_delay: 500).to_png)
+    file.write(png)
     file.flush
 
     self.image = file
+    self.image.recreate_versions!
     self.save
 
     file.unlink
