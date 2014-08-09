@@ -16,6 +16,7 @@ gem 'bootstrap-sass'
 gem 'jbuilder', '~> 1.2'
 
 gem 'carrierwave'
+gem 'imgkit'
 
 group :doc do
   gem 'sdoc', require: false
@@ -24,6 +25,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
+  gem 'binding_of_caller'
   gem 'heroku'
 end
 
